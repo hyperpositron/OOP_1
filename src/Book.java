@@ -4,6 +4,8 @@ public class Book extends PrintedProduct {
     private int pageQuantity;   // страница Количество
     private String content;     // содержание
 
+
+
     public void printContent() {
         System.out.println(content);
     }
