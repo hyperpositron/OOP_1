@@ -1,10 +1,14 @@
 public class Magazine extends PrintedProduct {
-    private String name;
-    private int pageQuantity;
-    private String content;
+    private String name;         // имя
+    private int pageQuantity;    // страница Количество
+    private String content;      // содержание
 
     public void printContent() {
         System.out.println(content);
+    }
+
+    public Magazine(String name, int pageQuantity, String content) {
+        super(name, pageQuantity, content);
     }
 
     public String getName() {

@@ -1,11 +1,16 @@
 public class Book extends PrintedProduct {
-    private String name;
-    private String authorName;
-    private int pageQuantity;
-    private String content;
+    private String name;        // имя
+    private String authorName;  // имя Автора
+    private int pageQuantity;   // страница Количество
+    private String content;     // содержание
 
     public void printContent() {
         System.out.println(content);
+    }
+
+    public Book(String name, int pageQuantity, String content) {
+        super(name, pageQuantity, content);
+        this.authorName = authorName;
     }
 
     public String getName() {
